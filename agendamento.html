@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbearia Premium - Agendamento</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Menu fixo -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">Barbearia Premium</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="#booking">Agendamento</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Agende Seu Atendimento</h1>
+    <p>Escolha seu barbeiro, serviço e horário.</p>
+    <a href="index.html" class="btn">Voltar para Início</a>
+  </div>
+</header>
+
+<!-- Formulário -->
+<section id="booking" class="booking">
+  <div class="container">
+    <form id="bookingForm">
+      <label for="barber">Escolha o Barbeiro:</label>
+      <select id="barber" required>
+        <option value="">Selecione o barbeiro</option>
+        <option value="Reis">Barbeiro Reis</option>
+        <option value="Souza">Barbeiro Souza</option>
+      </select>
+
+      <label for="service">Serviço:</label>
+      <select id="service" required>
+        <option value="">Escolha um serviço</option>
+        <option value="Corte Clássico">Corte Clássico - R$40</option>
+        <option value="Corte com Luzes">Corte com Luzes - R$120</option>
+        <option value="Corte Platinado">Corte Platinado - R$130</option>
+        <option value="Barba">Barba - R$30</option>
+        <option value="Barba & Sobrancelha">Barba & Sobrancelha - R$45</option>
+        <option value="Corte + Barba">Corte + Barba - R$70</option>
+      </select>
+
+      <label for="name">Nome:</label>
+      <input type="text" id="name" placeholder="Seu nome" required>
+
+      <label for="datetime">Data e Hora:</label>
+      <input type="datetime-local" id="datetime" required>
+
+      <button type="submit" class="btn">Agendar via WhatsApp</button>
+      <p id="error" style="color:#FFD700; margin-top:10px;"></p>
+    </form>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

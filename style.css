@@ -1,0 +1,82 @@
+/* Reset básico */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto',sans-serif; }
+
+/* Cores */
+:root {
+  --preto: #121212;
+  --amarelo: #FFD700;
+  --cinza: #1C1C1C;
+  --branco: #F5F5F5;
+}
+
+/* Body */
+body { background: var(--preto); color: var(--branco); scroll-behavior: smooth; }
+
+/* Menu */
+.navbar {
+  position: fixed;
+  top:0; left:0; right:0;
+  background: var(--cinza);
+  display:flex; justify-content:space-between; align-items:center;
+  padding:15px 20px; z-index:1000;
+}
+
+.navbar .logo { font-weight:bold; font-size:1.3rem; text-decoration:none; color: var(--amarelo); }
+
+.navbar .nav-links { list-style:none; display:flex; }
+.navbar .nav-links li { margin-left:20px; }
+.navbar .nav-links a { text-decoration:none; color: var(--branco); font-weight:bold; transition:0.3s; }
+.navbar .nav-links a:hover { color: var(--amarelo); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--amarelo), var(--cinza));
+  color: var(--preto);
+  text-align:center;
+  padding:120px 20px 80px 20px;
+  margin-top:60px;
+}
+
+.hero h1 { font-size:2.8rem; margin-bottom:15px; }
+.hero p { font-size:1.2rem; margin-bottom:20px; }
+
+.btn {
+  background: var(--amarelo);
+  color: var(--preto);
+  padding:12px 25px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover { background: var(--branco); color: var(--amarelo); transform: scale(1.05); }
+
+/* Tabela Serviços */
+.services-table { padding:60px 20px; }
+.services-table h2 { text-align:center; margin-bottom:25px; color: var(--amarelo); }
+.services-table table { width:100%; max-width:700px; margin:0 auto; border-collapse:collapse; }
+.services-table th, .services-table td { border:1px solid var(--cinza); padding:12px 10px; }
+.services-table th { background: var(--amarelo); color: var(--preto); }
+
+/* Booking */
+.booking { padding:60px 20px; }
+.booking form { max-width:450px; margin:auto; display:flex; flex-direction:column; }
+.booking label { margin-top:12px; font-weight:bold; }
+.booking input, .booking select, .booking button {
+  padding:10px; border-radius:8px; border:1px solid var(--cinza);
+  background: var(--preto); color: var(--amarelo);
+}
+.booking button { margin-top:15px; background: var(--amarelo); color: var(--preto); font-weight:bold; }
+
+/* Footer */
+footer { background: var(--cinza); color: var(--branco); text-align:center; padding:20px; margin-top:30px; }
+footer .socials a { color: var(--branco); text-decoration:none; margin:0 5px; }
+footer .socials a:hover { color: var(--amarelo); }
+
+/* Responsivo */
+@media (max-width:600px){
+  .hero h1{ font-size:2rem; }
+  .hero p{ font-size:1rem; }
+  .navbar .nav-links{ flex-direction:column; gap:10px; margin-top:10px;}
+}
