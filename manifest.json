@@ -1,0 +1,15 @@
+{
+  "name": "Fernando Barbearia",
+  "short_name": "Barbearia",
+  "start_url": "/fernando-barbearia/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "img/59wER7a8zZqgHjN2xApJjHWBbmWwd9tMWRPUPVkXE2SG1YY5H61v8zHwBiWDaaC0XXKq-ba4ZTrtpOnqI2ex4VwPQ9Kon1xO-bP9vtE57vP_xYQSqLBOfKLocEBq6yQYjsz1UoQtC5FMK5Kc3R6zPQAZXI0PGaLYYnp6_4Pg.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
